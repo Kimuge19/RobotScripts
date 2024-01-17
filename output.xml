@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240111 17:50:35.887" rpa="false" schemaversion="4">
+<suite id="s1" name="Crm" source="C:\Development\robot-scripts\first-script\pythonProject\Tests\Crm.robot">
+<test id="s1-t1" name="Should be able to launch Facebook" line="13">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240111 17:50:36.014" endtime="20240111 17:50:36.014"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20240111 17:50:36.015" endtime="20240111 17:50:36.015"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240111 17:50:36.016" level="INFO">Starting the test case!</msg>
+<status status="PASS" starttime="20240111 17:50:36.016" endtime="20240111 17:50:36.016"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://web.facebook.com/?_rdc=1&amp;_rdr</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240111 17:50:36.016" level="INFO">Opening browser 'chrome' to base url 'https://web.facebook.com/?_rdc=1&amp;_rdr'.</msg>
+<status status="PASS" starttime="20240111 17:50:36.016" endtime="20240111 17:50:38.869"/>
+</kw>
+<kw name="Maximise Browser Window">
+<msg timestamp="20240111 17:50:38.875" level="FAIL">No keyword with name 'Maximise Browser Window' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window</msg>
+<status status="FAIL" starttime="20240111 17:50:38.875" endtime="20240111 17:50:38.875"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>facebook</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20240111 17:50:38.876" endtime="20240111 17:50:38.876"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Log in</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20240111 17:50:38.877" endtime="20240111 17:50:38.877"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>kandiearapkimuge1987@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240111 17:50:38.877" endtime="20240111 17:50:38.877"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=pass</arg>
+<arg>25049877kimu@@@@@@@12#######</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240111 17:50:38.879" endtime="20240111 17:50:38.879"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240111 17:50:38.880" endtime="20240111 17:50:38.880"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>100s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240111 17:50:38.880" endtime="20240111 17:50:38.880"/>
+</kw>
+<doc>This is some basic info Salesforce Testing</doc>
+<tag>2024</tag>
+<tag>Contacts</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20240111 17:50:36.014" endtime="20240111 17:50:38.881">No keyword with name 'Maximise Browser Window' found. Did you mean:
+    SeleniumLibrary.Maximize Browser Window</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20240111 17:50:35.887" endtime="20240111 17:50:38.884"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">2024</stat>
+<stat pass="0" fail="1" skip="0">Contacts</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Crm">Crm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
